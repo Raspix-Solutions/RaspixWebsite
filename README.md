@@ -1,2 +1,2 @@
 # RaspixWebsite
-Strona Raspix Solutions
+Pliki strony internetowej Raspix Solutions
