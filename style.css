@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  background-color: #b03d76;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #963565;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('images/serverss.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+  /* Usuwa biały pasek */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Półprzezroczysty czarny overlay dla lepszej czytelności tekstu */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* About Section */
+
+.about-features ul li {
+  font-size: 1.5em;
+}
+
+.about-features h4 {
+  font-size: 1.5rem;
+}
+
+/* Pricing Section */
+.pricing {
+  background-color: #f8f9fa;
+}
+
+.pricing h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.pricing p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.pricing ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.pricing ul li {
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0.5rem;
+  padding: 1rem;
+  flex-basis: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing ul li h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing ul li p {
+  margin-bottom: 0.5rem;
+}
+
+.pricing ul li button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing ul li button:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .navbar {
+    text-align: left;
+  }
+
+  .navbar a {
+    margin: 0 1rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+  }
+
+  section h3 {
+    font-size: 2rem;
+  }
+
+  .pricing ul {
+    justify-content: space-between;
+  }
+
+  .pricing ul li {
+    flex-basis: 30%;
+  }
+}
