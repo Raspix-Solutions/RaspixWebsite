@@ -125,7 +125,7 @@ p {
 /* Sections */
 section {
   padding: 2rem 1rem;
-  margin: 2rem 0;
+  margin: 0;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -155,35 +155,61 @@ section ul li {
 
 /* About Section */
 
-.about-features ul li {
-  font-size: 1.5em;
+.about-features p {
+  margin: 2em;
 }
 
-.about-features h4 {
-  font-size: 1.5rem;
+.about-features ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-features ul li {
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  margin: 10px;
+  font-size: 1em;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f8f8;
+}
+
+.about-features ul li h4 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.about-features ul li p {
+  text-align: left;
+  margin: 0;
+  line-height: 1.4em;
 }
 
 /* Pricing Section */
 .pricing {
   background-color: #f8f9fa;
+  padding: 3rem 1rem;
+  margin: 0;
 }
 
-.pricing h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 1rem 0;
+.pricing h2 {
+  margin-bottom: 2rem;
 }
 
 .pricing p {
-  text-align: center;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .pricing ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1rem;
 }
 
 .pricing ul li {
@@ -191,33 +217,34 @@ section ul li {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  margin: 0.5rem;
-  padding: 1rem;
-  flex-basis: 200px;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  flex-basis: calc(33% - 2rem);
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing ul li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .pricing ul li h4 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .pricing ul li p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.pricing ul li button {
-  background: #333;
-  color: #fff;
+.pricing button {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.pricing ul li button:hover {
-  background: #555;
+  transition: 0.3s;
 }
 
 /* Responsive Design */
@@ -247,6 +274,6 @@ section ul li {
   }
 
   .pricing ul li {
-    flex-basis: 30%;
+    flex-basis: calc(30% - 2rem);
   }
 }
