@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-body {
-  margin: 0;
-}
-
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -245,6 +240,77 @@ section ul li {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 0px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #b03d76;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links li {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  text-transform: none; /* Ustawia normalną wielkość liter */
+  margin: 5px 0; /* Usuwa odstępy powyżej i poniżej akapitu */
+}
+
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
 }
 
 /* Responsive Design */
